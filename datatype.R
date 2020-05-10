@@ -5,3 +5,16 @@
 4) Logical
 5) Complex
 6) Raw"
+
+a <- 12.3334
+b <- "Shani Kumar Gupta"
+c <- 12L
+d <- TRUE
+e <- 5.3+4i
+
+print(class(a),a)
+print(class(b),b)
+print(class(c),c)
+print(class(d),d)
+print(class(e),e)
+cat(a)
