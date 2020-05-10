@@ -12,9 +12,14 @@ c <- 12L
 d <- TRUE
 e <- 5.3+4i
 
-print(class(a),a)
-print(class(b),b)
-print(class(c),c)
-print(class(d),d)
-print(class(e),e)
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
 cat(a)
+class(a)
+class(b)
+class(c)
+class(d)
+class(e)
