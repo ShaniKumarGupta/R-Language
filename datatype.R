@@ -44,3 +44,9 @@ print(class(vec))
 lt <- list(c(2,5,3), 21.5, "shani")
 print(lt)
 print(class(lt))
+
+# Create a Matrices
+M <- matrix(c('a','a','b','c','d','e'), nrow = 2, ncol = 3, byrow = TRUE)
+print(M)
+print(class(M))
+
