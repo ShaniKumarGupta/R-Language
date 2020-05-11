@@ -38,6 +38,7 @@ class(e)
 vec <- c("red","green","blue")
 print(vec)
 print(class(vec))
+class(vec)
 
 # Create a List
 
@@ -50,3 +51,9 @@ M <- matrix(c('a','a','b','c','d','e'), nrow = 2, ncol = 3, byrow = TRUE)
 print(M)
 print(class(M))
 
+# Create an Array
+arr <- array(c('green','red'), dim = c(3,3,2))
+print(arr)
+class(arr)
+
+# Create a factor
