@@ -33,8 +33,14 @@ class(e)
 5) Factors
 6) DataFrames"
 
-# Create Vector
+# Create a Vector
 
 vec <- c("red","green","blue")
 print(vec)
 print(class(vec))
+
+# Create a List
+
+lt <- list(c(2,5,3), 21.5, "shani")
+print(lt)
+print(class(lt))
