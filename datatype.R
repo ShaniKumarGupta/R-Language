@@ -23,3 +23,18 @@ class(b)
 class(c)
 class(d)
 class(e)
+
+"Main Data Types in R are:"
+"
+1) Vectors
+2) Lists
+3) Matrices
+4) Arrays
+5) Factors
+6) DataFrames"
+
+# Create Vector
+
+vec <- c("red","green","blue")
+print(vec)
+print(class(vec))
