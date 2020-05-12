@@ -35,7 +35,7 @@ class(e)
 
 # Create a Vector
 
-vec <- c("red","green","blue")
+vec <- c("red","green","blue",2)
 print(vec)
 print(class(vec))
 class(vec)
