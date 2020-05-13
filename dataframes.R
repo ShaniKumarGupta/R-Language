@@ -17,3 +17,7 @@ Gender <- c("M","M","M","F","M","M","M")
 
 df <- data.frame(students,weight,Gender)
 View(df)
+
+# Number of row and columns present in dataset
+nrow(df)
+ncol(df)
