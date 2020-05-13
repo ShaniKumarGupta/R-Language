@@ -31,3 +31,14 @@ summary(df)
 # reading only few of the top elements 
 head(df)
 
+# reading few of the bottom data
+tail(df)
+
+# what is the structure of the data frames
+str(df)
+
+# How to access particular data set from the table?
+df$students
+
+# Accesssing particular data from the table
+df[5,1]
