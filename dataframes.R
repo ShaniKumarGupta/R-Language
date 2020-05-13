@@ -21,3 +21,13 @@ View(df)
 # Number of row and columns present in dataset
 nrow(df)
 ncol(df)
+
+# what is dimension of data frame
+dim(df)
+
+# summary of data sets
+summary(df)
+
+# reading only few of the top elements 
+head(df)
+
