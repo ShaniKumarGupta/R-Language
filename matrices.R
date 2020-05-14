@@ -27,3 +27,5 @@ print(c)
 colnames(c) <- c("first","second")
 print(c)
 
+rownames(c) <- c("Row 1","Row 2","Row 3","Row 4","Row 5")
+print(c)
