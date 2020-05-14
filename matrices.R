@@ -29,3 +29,24 @@ print(c)
 
 rownames(c) <- c("Row 1","Row 2","Row 3","Row 4","Row 5")
 print(c)
+
+
+# Lets do some Matrix operations
+
+matrix(1:12, byrow = FALSE, nrow = 4)
+matrix(1:12, byrow = TRUE, nrow = 4)
+
+a <- matrix(1:30, byrow = FALSE, nrow = 5)
+print(a)
+
+a[2,3]
+a[2,]
+a[,3]
+a[1:3,4]
+
+a[1:3,2:5]
+
+# binding of matrix
+b <- 31:35
+cbind(a,b)
+
