@@ -74,3 +74,27 @@ df
 subset(df,subset = Gender == "M")
 weight.ordered <- order(df["weight"])
 df[weight.ordered,]
+
+# Perform Same operation on CO2 datasets
+df1 <- data.frame(CO2)
+df1
+
+nrow(df1)
+ncol(df1)
+dim(df1)
+summary.data.frame(df1)
+summary(df1)
+str(df1)
+
+head(df1)
+tail(df1)
+
+df1$Plant
+df1[["uptake"]]
+
+df1[,2]
+df1[,3]
+df1[34,]
+df1[3:30,]
+df1[,1:4]
+subset(df1, subset = Plant == "Qn1")
