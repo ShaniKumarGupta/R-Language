@@ -32,3 +32,46 @@ lets.switch <- function(x)
 lets.switch("a")
 lets.switch("t")
 lets.switch("")
+lets.switch("p")
+
+# For loop
+
+for(i in 1:10)
+{
+  print(i)
+}
+
+df <- data.frame(CO2)
+print(df)
+for(i in df$Plant){
+  print(i)
+}
+
+print(1:10)
+print(df$Type)
+
+# While loop
+
+x <- 1
+while(x <= 5){
+  print(x)
+  x <- x + 1
+}
+
+# Loop control statement
+
+# Next Statement
+for(i in 1:10){
+  if(i==3){
+    next
+  }
+  print(i)
+}
+
+# Break Statement
+for(j in 1:10){
+  if(j==5){
+    break
+  }
+  print(j)
+}
