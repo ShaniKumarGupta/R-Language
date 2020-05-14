@@ -19,3 +19,16 @@ ifelse(check==0,"True","False")
 testval <- c(1,0,1,0,0,1)
 ifelse(testval == 1,"True","False")
 
+ifelse(testval == 0, 3*testval, 5*testval)
+
+# Switch cases
+
+lets.switch <- function(x)
+{
+  switch (x, "a"="Alpha", "b"="Beta", "o"="Omega", "t"="Theta", "Out of Bounds"
+  )
+}
+
+lets.switch("a")
+lets.switch("t")
+lets.switch("")
