@@ -57,3 +57,10 @@ df[,-3]
 df[2:4,]
 
 df[,1:2]
+
+# Similar to df$students
+df[["students"]]
+
+# calling particular columns using columns names
+df[,c("students","weight")]
+
