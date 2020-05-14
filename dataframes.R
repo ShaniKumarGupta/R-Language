@@ -64,3 +64,13 @@ df[["students"]]
 # calling particular columns using columns names
 df[,c("students","weight")]
 
+# using Drop commands
+df[,1,drop= FALSE]
+df[,3,drop=TRUE]
+
+df
+
+# lets work with subset functions
+subset(df,subset = Gender == "M")
+weight.ordered <- order(df["weight"])
+df[weight.ordered,]
