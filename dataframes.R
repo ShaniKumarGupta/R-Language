@@ -42,3 +42,18 @@ df$students
 
 # Accesssing particular data from the table
 df[5,1]
+
+# to access particular column
+df[,3]
+df[,1]
+
+# to access particular row
+df[5,]
+
+# to access whole data except particular column
+df[,-3]
+
+# data frame for just particular set of data
+df[2:4,]
+
+df[,1:2]
