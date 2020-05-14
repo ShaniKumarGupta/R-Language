@@ -50,3 +50,16 @@ a[1:3,2:5]
 b <- 31:35
 cbind(a,b)
 
+# Transpose of of Matrix
+a
+t(a)
+
+# Sum of rows and columns
+
+colSums(a)
+
+rowSums(a)
+
+# Mean 
+rowMeans(a)
+colMeans(a)
