@@ -52,4 +52,23 @@ ggplot(hp, aes(x = Group.1, y= Happiness.Score, fill = Group.1)) + geom_bar(stat
 col <- sapply(db, is.numeric)
 cor.data <- cor(db[,col])
 corrplot(cor.data, method = 'square', type = 'upper')
+corrplot(cor.data, method = 'number', type = 'upper')
+
+# Lets create boxplot region wise
+box <- ggplot(db, aes(x=Region, y=Happiness.Score, color = Region))
+box + geom_boxplot() + geom_jitter(aes(color = Country), size=1.0) + ggtitle("Happiness score for Regions and Countries") + coord_flip() + theme(legend.position = "none")
+
+# box plot for continent
+
+
+
+
+
+
+
+
+
+
+
+
 
