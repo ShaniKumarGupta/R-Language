@@ -28,3 +28,24 @@ plot + geom_bar(aes(fill = cut), color = "Black", position = "dodge")
 plot + geom_bar(aes(fill = cut), color = "Black", position = "stack")
 
 plot + geom_bar(aes(color = color), fill = NA, position = "identity")
+
+
+# Part 2
+
+# let's create more discrete graph with one variable
+# to understand how to use position, coordinates, labels
+
+plot <- ggplot(db, aes(cut))
+
+plot + geom_bar()
+
+# fill the graph with clarity
+
+plot + geom_bar(aes(fill = clarity))
+
+# lets revise how to use position
+plot <- ggplot(db, aes(cut, fill = clarity))
+plot + geom_bar(position = "dodge")
+plot + geom_bar(position = "fill")
+plot + geom_bar(position = "identity")
+plot + geom_bar(position = "stack")
