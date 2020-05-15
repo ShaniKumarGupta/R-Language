@@ -28,3 +28,13 @@ plot + geom_point(aes(color = factor(cyl)))
 
 # classify based on size for cylinder
 plot + geom_point(aes(size = factor(cyl)))
+
+# lets see the overlapping points also
+plot + geom_point(aes(size = factor(cyl), alpha = 0.5))
+
+# lets changing the shape of the markers
+plot + geom_point(aes(shape = factor(cyl)))
+
+plot + geom_point(aes(shape = factor(cyl), size = 3))
+
+# Let's do some simple regression
