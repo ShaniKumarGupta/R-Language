@@ -62,11 +62,29 @@ box + geom_boxplot() + geom_jitter(aes(color = Country), size=1.0) + ggtitle("Ha
 
 ggplot(db, aes(x = continent, y= Happiness.Score, color= continent)) + geom_boxplot() + ggtitle("Happiness Score for continent")
 
+# Regression for all continent
+ggplot(db, aes(x = Health..Life.Expectancy. , y = Happiness.Score)) + geom_point(aes(color = continent), size=3, alpha=0.8) + geom_smooth(aes(color = continent, fill = continent),method = 'lm', fullrange = T) + facet_wrap(~continent) + theme_bw() + ggtitle("Scatter plot for Life Expectancy")
 
+# For Economy
+ggplot(db, aes(x = Economy..GDP.per.Capita. , y = Happiness.Score)) + geom_point(aes(color = continent), size=3, alpha=0.8) + geom_smooth(aes(color = continent, fill = continent),method = 'lm', fullrange = T) + facet_wrap(~continent) + theme_bw() + ggtitle("Scatter plot for Life Expectancy")
 
+# for freedom
 
+ggplot(db, aes(x = Freedom , y = Happiness.Score)) + geom_point(aes(color = continent), size=3, alpha=0.8) + geom_smooth(aes(color = continent, fill = continent),method = 'lm', fullrange = T) + facet_wrap(~continent) + theme_bw() + ggtitle("Scatter plot for Life Expectancy")
 
+# for Family
+ggplot(db, aes(x = Family , y = Happiness.Score)) + geom_point(aes(color = continent), size=3, alpha=0.8) + geom_smooth(aes(color = continent, fill = continent),method = 'lm', fullrange = T) + facet_wrap(~continent) + theme_bw() + ggtitle("Scatter plot for Life Expectancy")
 
+# for Trust in Government
+ggplot(db, aes(x = Trust..Government.Corruption. , y = Happiness.Score)) + geom_point(aes(color = continent), size=3, alpha=0.8) + geom_smooth(aes(color = continent, fill = continent),method = 'lm', fullrange = T) + facet_wrap(~continent) + theme_bw() + ggtitle("Scatter plot for Life Expectancy")
+
+# plots were for the whole continent
+# plot for the most unhappiest places, noticed in box plot
+
+box + geom_boxplot() + geom_jitter(aes(color = Country), size=1.0) + ggtitle("Happiness score for Regions and Countries") + coord_flip() + theme(legend.position = "none")
+
+# Sub saharan Africa is the most unhappiest region
+# classify all of the data based on happiest neutral and less happy region
 
 
 
