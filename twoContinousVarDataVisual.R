@@ -38,3 +38,10 @@ plot + geom_point(aes(shape = factor(cyl)))
 plot + geom_point(aes(shape = factor(cyl), size = 3))
 
 # Let's do some simple regression
+plot + geom_smooth() + geom_point()
+
+plot + geom_smooth(method = 'lm') + geom_point()
+
+# Quantile Graph
+library(quantreg)
+plot + geom_quantile() + geom_point()
