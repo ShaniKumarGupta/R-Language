@@ -23,3 +23,12 @@ sum <- function(x,y){
 }
 
 sum(12,23)
+
+# Do call function list
+
+math.it <- function(x, func = mean){
+  do.call(func, args = list(x))
+}
+
+math.it(1:10)
+math.it(1:10,sd)
