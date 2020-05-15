@@ -14,3 +14,17 @@ plot + geom_label()
 
 # classify based on cylinders
 plot + geom_label(aes(color = cyl))
+
+# factor
+factor(mtcars$cyl)
+factor(mtcars$hp)
+nrow(mtcars)
+
+plot + geom_label(aes(color = factor(cyl)))
+
+# Learn about point and jitter plots
+
+plot + geom_point(aes(color = factor(cyl)))
+
+# classify based on size for cylinder
+plot + geom_point(aes(size = factor(cyl)))
