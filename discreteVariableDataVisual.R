@@ -49,3 +49,26 @@ plot + geom_bar(position = "dodge")
 plot + geom_bar(position = "fill")
 plot + geom_bar(position = "identity")
 plot + geom_bar(position = "stack")
+
+# Learn to deal with coordinates
+# flipping the coordinates
+
+plot + geom_bar() + coord_flip()
+
+# polar coordinates
+plot + geom_bar() + coord_polar()
+
+# labels
+
+plot + geom_bar(position = "stack") + ggtitle("Cut Classification based on Clarity")
+
+# adding x and y labels
+plot + geom_bar(position = "stack") + ggtitle("Cut Classification based on Clarity") + xlab("cut") + ylab("count")
+
+# adding all of them in a single command
+plot + geom_bar(position = "stack") + labs(title = "Cut Classification", x = "cut", y="count")
+
+# lets create some factes
+plot + geom_bar(position = "dodge") + facet_grid(.~cut)
+
+plot + geom_bar(position = "dodge") + facet_wrap(~cut)
