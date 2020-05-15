@@ -86,7 +86,13 @@ box + geom_boxplot() + geom_jitter(aes(color = Country), size=1.0) + ggtitle("Ha
 # Sub saharan Africa is the most unhappiest region
 # classify all of the data based on happiest neutral and less happy region
 
+db$happinessmeter <- NA
+db$happinessmeter[which(db$Region %in% c("Australia and New Zealand","Western Europe","America"))] <- "Happiest"
 
+db$happinessmeter[which(db$Region %in% c("Sub-Saharan Africa"))] <- "Least Happiest"
 
+db$happinessmeter[which(db$Region %in% c("Southern Asia","Southeastern Asia","Middle East and Northern Africa", "Latin America and Caribbean","Eastern Asia","Central and Eastern Europe"))] <- "Nuetral"
+
+View(db)
 
 
