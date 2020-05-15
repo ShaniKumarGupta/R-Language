@@ -30,3 +30,6 @@ plot + geom_freqpoly(binwidth = 600)
 
 plot + geom_freqpoly(binwidth = 600, aes(color = cut))
 
+# Area graph
+plot + geom_area(stat = "bin")
+plot + geom_area(stat = "bin", aes(color = cut))
