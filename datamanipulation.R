@@ -32,3 +32,10 @@ head(transmute(db, Volume_of_diamond = x*y*z))
 
 # finding out mean or sum of particular column
 summarise(df, volume_avg = mean(Volume_of_diamond))
+
+# I want to know the different types of cut in db dataset
+distinct(select(db,cut))
+
+# distinct variables of color
+distinct(select(db, color))
+
