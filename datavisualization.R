@@ -24,3 +24,9 @@ plot + geom_histogram(binwidth = 600, aes(fill=clarity))
 
 # add border to the classification
 plot + geom_histogram(binwidth = 600, aes(fill=cut), color = "Black")
+
+# freploy graph
+plot + geom_freqpoly(binwidth = 600)
+
+plot + geom_freqpoly(binwidth = 600, aes(color = cut))
+
