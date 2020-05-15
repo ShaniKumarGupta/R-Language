@@ -95,4 +95,21 @@ db$happinessmeter[which(db$Region %in% c("Southern Asia","Southeastern Asia","Mi
 
 View(db)
 
+# Plot regression for all three region
+ggplot(db, aes(x = Health..Life.Expectancy. , y = Happiness.Score)) + geom_point(aes(color = happinessmeter), size = 3, alpha=0.8) + geom_smooth(aes(color = happinessmeter, fill = happinessmeter), method = 'lm', fullrange = T) + facet_wrap(~happinessmeter) + theme_bw() 
+
+#plot for economy
+ggplot(db, aes(x = Economy..GDP.per.Capita. , y = Happiness.Score)) + geom_point(aes(color = happinessmeter), size = 3, alpha=0.8) + geom_smooth(aes(color = happinessmeter, fill = happinessmeter), method = 'lm', fullrange = T) + facet_wrap(~happinessmeter) + theme_bw() 
+
+# for Family
+ggplot(db, aes(x = Family , y = Happiness.Score)) + geom_point(aes(color = happinessmeter), size = 3, alpha=0.8) + geom_smooth(aes(color = happinessmeter, fill = happinessmeter), method = 'lm', fullrange = T) + facet_wrap(~happinessmeter) + theme_bw() 
+
+# for Freedom
+ggplot(db, aes(x = Freedom , y = Happiness.Score)) + geom_point(aes(color = happinessmeter), size = 3, alpha=0.8) + geom_smooth(aes(color = happinessmeter, fill = happinessmeter), method = 'lm', fullrange = T) + facet_wrap(~happinessmeter) + theme_bw() 
+
+# for Generosity
+ggplot(db, aes(x = Generosity , y = Happiness.Score)) + geom_point(aes(color = happinessmeter), size = 3, alpha=0.8) + geom_smooth(aes(color = happinessmeter, fill = happinessmeter), method = 'lm', fullrange = T) + facet_wrap(~happinessmeter) + theme_bw() 
+
+# plot for Dystopia Residual
+ggplot(db, aes(x = Dystopia.Residual , y = Happiness.Score)) + geom_point(aes(color = happinessmeter), size = 3, alpha=0.8) + geom_smooth(aes(color = happinessmeter, fill = happinessmeter), method = 'lm', fullrange = T) + facet_wrap(~happinessmeter) + theme_bw() 
 
