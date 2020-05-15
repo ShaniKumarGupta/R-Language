@@ -22,3 +22,13 @@ head(arrange(db, carat, depth, table))
 # renaming particular row for appropriate name
 df <- rename(db, Purity = clarity)
 View(df)
+
+# Create a column and add in databse which is function of other parameters
+df <- mutate(db, Volume_of_diamond = x*y*z)
+View(df)
+
+# suppose you want to see only the new datasets added to datasets
+head(transmute(db, Volume_of_diamond = x*y*z))
+
+# finding out mean or sum of particular column
+summarise(df, volume_avg = mean(Volume_of_diamond))
