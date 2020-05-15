@@ -49,4 +49,7 @@ tail(db,10)
 ggplot(hp, aes(x = Group.1, y= Happiness.Score, fill = Group.1)) + geom_bar(stat = "identity") + ggtitle("Happiness score of each continent") + ylab("Happines Score") + xlab("Continent")
 
 # Let's find out the correlation in variables
+col <- sapply(db, is.numeric)
+cor.data <- cor(db[,col])
+corrplot(cor.data, method = 'square', type = 'upper')
 
