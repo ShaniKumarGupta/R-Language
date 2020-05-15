@@ -19,3 +19,9 @@ db <- read.csv("diamonds.csv")
 # view the dataset
 View(db)
 names(db)
+
+head(db)
+summary(db)
+
+# lets learn about filter function
+
