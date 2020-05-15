@@ -28,3 +28,25 @@ db$continent[which(db$Region %in% c("Sub-Saharan Africa","Middle East and Northe
 # Asia
 db$continent[which(db$Region %in% c("Eastern Asia","Southern Asia","Southeastern Asia"))] <- "Asia"
 db$continent[which(db$Region %in% c("Latin America and Caribbean"))] <- "South America"
+
+# Lets create an average of all the numerical data continent wise
+hp <- aggregate(db[,4:11], list(db$continent), mean)
+View(hp)
+
+
+# Data Visualization for WHD
+
+library(ggplot2)
+library(corrplot)
+library(corrgram)
+
+# Lets start with basics
+summary(db)
+head(db,10)
+tail(db,10)
+
+# lets graph the maen data of all continent
+ggplot(hp, aes(x = Group.1, y= Happiness.Score, fill = Group.1)) + geom_bar(stat = "identity") + ggtitle("Happiness score of each continent") + ylab("Happines Score") + xlab("Continent")
+
+# Let's find out the correlation in variables
+
