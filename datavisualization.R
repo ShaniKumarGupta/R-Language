@@ -33,3 +33,13 @@ plot + geom_freqpoly(binwidth = 600, aes(color = cut))
 # Area graph
 plot + geom_area(stat = "bin")
 plot + geom_area(stat = "bin", aes(color = cut))
+plot + geom_area(stat = "bin", aes(fill = cut))
+
+# Density plots
+
+plot + geom_density(aes(color= cut))
+plot + geom_density(aes(fill = cut))
+
+# some cut graphs are hidden behind the density fills
+plot + geom_density(aes(fill = cut), alpha = .3)
+plot + geom_density(aes(fill = cut), alpha = .3, size = 1)
