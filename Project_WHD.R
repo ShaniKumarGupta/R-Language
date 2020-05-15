@@ -60,7 +60,7 @@ box + geom_boxplot() + geom_jitter(aes(color = Country), size=1.0) + ggtitle("Ha
 
 # box plot for continent
 
-
+ggplot(db, aes(x = continent, y= Happiness.Score, color= continent)) + geom_boxplot() + ggtitle("Happiness Score for continent")
 
 
 
